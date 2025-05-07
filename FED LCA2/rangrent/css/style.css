@@ -1,0 +1,410 @@
+/* --- Basic Reset & Body --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; /* Simple default font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #AC254F; /* Primary color */
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #AC254F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #8a1f3f;
+}
+
+/* --- Header --- */
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust */
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color: #333;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: #AC254F;
+    border-bottom: 2px solid #AC254F;
+}
+
+.header-actions a {
+    margin-left: 15px;
+}
+.header-actions img {
+    height: 22px;
+}
+
+.mobile-menu-button {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.mobile-nav {
+    display: none; /* Hidden by default */
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+.mobile-nav ul {
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-nav li {
+    margin: 5px 0;
+}
+/* Basic JS will toggle this class */
+.mobile-nav.active {
+    display: block;
+}
+
+
+/* --- Footer --- */
+.site-footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 30px 0 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow */
+    min-width: 150px; /* Minimum width before wrapping */
+    margin-bottom: 20px;
+}
+
+
+.footer-section h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #ccc;
+}
+.footer-section a:hover {
+    color: #fff;
+}
+.payment-icon {
+    height: 25px;
+    margin-right: 5px;
+    background-color: #fff; /* If icons are transparent */
+    padding: 2px;
+    border-radius: 3px;
+    display: inline-block; /* Ensure they sit side-by-side */
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+/* --- Homepage Specific --- */
+.hero {
+    background-color: #f0e4e4; /* Light pinkish */
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.hero h1 {
+    margin-bottom: 10px;
+    color: #AC254F;
+}
+
+.categories h2, .how-it-works h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.category-items, .steps {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.category-item, .step {
+    flex-basis: 200px; /* Base width for items */
+}
+.category-item img {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+.category-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.step {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+/* --- Product List Specific --- */
+.page-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.list-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.filters {
+    width: 200px; /* Fixed width sidebar */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+.filters h3 { margin-bottom: 15px;}
+.filter-group { margin-bottom: 20px; }
+.filter-group h4 { margin-bottom: 8px; font-size: 1em;}
+.filter-group ul { margin-left: 0; }
+.filter-group li { margin-bottom: 4px; }
+.filter-group label { display: block; margin-bottom: 4px; font-size: 0.9em;}
+.filter-btn { width: 100%; margin-top: 10px; }
+
+.product-grid {
+    flex-grow: 1; /* Take remaining space */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product-card {
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    flex-basis: calc(33.333% - 14px); /* Approx 3 columns, adjust gap calc */
+    min-width: 180px; /* Min width before wrapping inside */
+}
+.product-card img {
+    margin-bottom: 10px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+.product-card h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.product-card .price {
+    font-weight: bold;
+    color: #AC254F;
+    margin-bottom: 5px;
+}
+.product-card .sizes {
+    font-size: 0.8em;
+    color: #666;
+}
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin: 0 3px;
+    color: #AC254F;
+}
+.pagination a.active, .pagination a:hover {
+    background-color: #AC254F;
+    color: #fff;
+    border-color: #AC254F;
+}
+
+
+/* --- Product Detail Specific --- */
+.product-detail-layout {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.product-gallery-simple {
+    width: 55%; /* Adjust width */
+    flex-shrink: 0;
+}
+.main-image-container img {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    width: 260px; /* Adjust */
+}
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+}
+.thumbnail {
+    width: 80px; /* Adjust */
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.thumbnail.active {
+    border-color: #AC254F;
+}
+
+.product-info-simple {
+    flex-grow: 1;
+}
+.product-info-simple h1 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+.product-info-simple .price {
+    font-size: 1.5em;
+    color: #AC254F;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.product-info-simple .rental-note {
+    font-size: 0.7em;
+    color: #666;
+    font-weight: normal;
+}
+.options { margin-bottom: 15px; }
+.options h4 { margin-bottom: 8px; }
+.option-buttons { display: flex; flex-wrap: wrap; gap: 8px;}
+.option-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 40px; /* Ensure minimum size */
+    text-align: center;
+}
+/* Style for color swatches */
+.color-options .option-button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    min-width: auto;
+}
+
+.option-button.active {
+    border-color: #AC254F;
+    background-color: #f0e4e4; /* Light selection background */
+    font-weight: bold; /* Optional */
+    box-shadow: 0 0 0 1px #AC254F inset; /* Indicate active */
+}
+.color-options .option-button.active {
+     box-shadow: 0 0 0 2px #fff, 0 0 0 4px #AC254F; /* Ring effect */
+}
+.add-to-cart-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    width: 100%;
+}
+
+.product-details-stacked {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+.detail-section {
+    margin-bottom: 25px;
+}
+.detail-section h2 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+}
+.detail-section ul { list-style: disc; margin-left: 20px;}
+
+.related-products {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+.related-products h2 { text-align: center; margin-bottom: 20px;}
+.related-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Or space-around */
+    flex-wrap: wrap;
+}
+.related-grid .product-card { /* Reuse list card styles */
+    flex-basis: calc(25% - 12px); /* Approx 4 columns */
+    min-width: 160px;
+}

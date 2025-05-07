@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Kurta Set - Rent a Rent</title> <!-- Change title per product -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header (Copy from index.html or ensure paths are correct) -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Rent a Rent Logo"> <!-- Check path -->
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="product-list.html" class="active">Rent Mens Wear</a></li>
+                    <li><a href="#">Rent Womens Wear</a></li>
+                    <li><a href="#">Rent Kids Wear</a></li>
+                </ul>
+            </nav>
+             <div class="header-actions">
+                <a href="#"><img src="images/icons/search.svg" alt="Search"></a> <!-- Check path -->
+                <a href="#"><img src="images/icons/whishlist.png" alt="Wishlist"></a> <!-- Add icon -->
+                <a href="#"><img src="images/icons/Cart.png" alt="Cart"></a> <!-- Add icon -->
+             </div>
+            <button class="mobile-menu-button">☰</button>
+        </div>
+    </header>
+     <nav class="mobile-nav">
+         <ul>
+            <li><a href="product-list.html" class="active">Rent Mens Wear</a></li>
+            <li><a href="#">Rent Womens Wear</a></li>
+            <li><a href="#">Rent Kids Wear</a></li>
+         </ul>
+    </nav>
+    <!-- End Header -->
+
+
+    <!-- Main Content -->
+    <main class="container page-content">
+
+        <div class="product-detail-layout">
+            <!-- Product Gallery -->
+            <section class="product-gallery-simple">
+                <div class="main-image-container">
+                    <!-- Default image shown. Correct path and extension based on structure -->
+                    <img id="mainProductImage" src="images/products/pink kurta main.png" alt="Pink Draped Kurta Jacket Set Main View">
+                </div>
+                <div class="thumbnail-container">
+                    <!-- IMPORTANT: Add thumb1.jpg etc. to images/products/ -->
+                    <!-- Data-large-src points to the correct main image based on structure -->
+                    <img src="images/products/pink kurta main.png" alt="Thumbnail Pink Kurta Set View 1" class="thumbnail active" data-large-src="images/products/pink-kurta-main.jpeg">
+                    <!-- IMPORTANT: Add thumb2.jpg and the corresponding large view (e.g., pink-kurta-view2.jpg) -->
+                    <img src="images/products/pink-kurta-2.png" alt="Thumbnail Pink Kurta Set View 2" class="thumbnail" data-large-src="images/products/pink-kurta-2.png">
+                    <!-- IMPORTANT: Add thumb3.jpg and the corresponding large view (e.g., pink-kurta-view3.jpg) -->
+                    <img src="images/products/pink-kurta-back.png" alt="Thumbnail Pink Kurta Set View 3" class="thumbnail" data-large-src="images/products/pink-kurta-back.png">
+                </div>
+            </section>
+
+            <!-- Product Information -->
+            <section class="product-info-simple">
+                <h1>Pink Draped Kurta Jacket Set</h1> <!-- Edit Product Name -->
+                <p class="price">Rs. 1500 <span class="rental-note">/ 4 days</span></p> <!-- Edit Price -->
+
+                <!-- Options sections -->
+                 <div class="options">
+                    <h4>Color</h4>
+                    <div class="option-buttons color-options">
+                        <button class="option-button active" title="Pink" style="background-color:#FFC0CB;"></button>
+                        <button class="option-button" title="Light Green" style="background-color:#90EE90;"></button>
+                    </div>
+                </div>
+                <div class="options">
+                    <h4>Size</h4>
+                    <div class="option-buttons size-options">
+                        <button class="option-button">S</button>
+                        <button class="option-button">M</button>
+                        <button class="option-button">L</button>
+                        <button class="option-button active">XL</button>
+                        <button class="option-button">XXL</button>
+                    </div>
+                </div>
+                 <div class="options">
+                    <h4>Rent Period (Days)</h4>
+                    <div class="option-buttons period-options">
+                        <button class="option-button active">4</button>
+                        <button class="option-button">6</button>
+                        <button class="option-button">8</button>
+                    </div>
+                </div>
+                <button class="btn add-to-cart-btn">Add to Cart</button>
+          
+        </div>
+</section>
+        <!-- Stacked Info Sections -->
+        <div class="product-details-stacked">
+            <section class="detail-section">
+                <h2>Description</h2>
+                <p>Beautiful floral print kurta jacket set...</p> <!-- Edit Description -->
+                <ul><li>Design: Floral Print</li><li>Fabric: Cotton Silk, Raw Silk</li></ul>
+            </section>
+             <section class="detail-section"><h2>Sizing Guide</h2> <p>Example Sizes...</p></section>
+             <section class="detail-section"><h2>Delivery & Returns</h2><p>Standard delivery...</p></section>
+        </div>
+
+         <!-- Simple Related Products -->
+         <section class="related-products">
+             <h2>You May Also Like</h2>
+             <div class="related-grid">
+                 <div class="product-card">
+                    <a href="#">
+                        <!-- IMPORTANT: Add related product images -->
+                        <img src="images/products/blue floral kurta.png" alt="Blue Floral Kurta">
+                        <h3>Blue Floral Kurta</h3>
+                        <p class="price">Rs. 1800</p>
+                    </a>
+                 </div>
+                 <div class="product-card">
+                    <a href="#">
+                        <img src="images/products/beige cream kurta.png" alt="Beige Paisley Kurta">
+                        <h3>Beige Paisley Kurta</h3>
+                        <p class="price">Rs. 2000</p>
+                    </a>
+                 </div>
+             </div>
+         </section>
+
+    </main>
+
+    <!-- Footer (Copy from index.html or ensure paths are correct) -->
+     <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="product-list.html">Rent Mens Wear</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                 <a href="#"><img src="images/icons/facebook.png" alt="Facebook" style="height:20px; display:inline-block; margin: 0 5px;"></a> <!-- Add icon -->
+                 <a href="#"><img src="images/icons/instagram.png" alt="Instagram" style="height:20px; display:inline-block; margin: 0 5px;"></a> <!-- Add icon -->
+                <p>Stay connected!</p>
+            </div>
+             <div class="footer-section">
+                <h4>Payments</h4>
+                 <img src="images/icons/visa.png" alt="Visa" class="payment-icon"> <!-- Add icon -->
+                 <img src="images/icons/mastercard.png" alt="Mastercard" class="payment-icon"> <!-- Add icon -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Rent a Rent. Simple Version.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Link to the combined JS file for the simplified version -->
+    <script src="js/script.js"></script>
+</body>
+</html>

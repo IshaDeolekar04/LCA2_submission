@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Wear - Rent a Rent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header (Copy from index.html or ensure paths are correct) -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Rent a Rent Logo"> <!-- Check path -->
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="product-list.html" class="active">Rent Mens Wear</a></li>
+                    <li><a href="#">Rent Womens Wear</a></li>
+                    <li><a href="#">Rent Kids Wear</a></li>
+                </ul>
+            </nav>
+             <div class="header-actions">
+                <a href="#"><img src="images/icons/search.svg" alt="Search"></a> <!-- Check path -->
+                <a href="#"><img src="images/icons/whishlist.png" alt="Wishlist"></a> <!-- Add heart.svg -->
+                <a href="#"><img src="images/icons/Cart.png" alt="Cart"></a> <!-- Add shopping-bag.svg -->
+             </div>
+            <button class="mobile-menu-button">☰</button>
+        </div>
+    </header>
+    <nav class="mobile-nav">
+         <ul>
+            <li><a href="product-list.html" class="active">Rent Mens Wear</a></li>
+            <li><a href="#">Rent Womens Wear</a></li>
+            <li><a href="#">Rent Kids Wear</a></li>
+         </ul>
+    </nav>
+    <!-- End Header -->
+
+
+    <!-- Main Content -->
+    <main class="container page-content">
+        <h1>Men's Wear</h1>
+
+        <div class="list-layout">
+            <!-- Filters Sidebar -->
+            <aside class="filters">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <h4>Category</h4>
+                    <ul>
+                        <li><a href="#">Kurta Sets</a></li>
+                        <li><a href="#">Sherwani</a></li>
+                        <li><a href="#">Indo-Western</a></li>
+                    </ul>
+                </div>
+                 <!-- Add other filter groups -->
+                 <button class="btn filter-btn">Apply</button>
+            </aside>
+
+            <!-- Product Grid -->
+            <section class="product-grid">
+                <!-- Product Card Example 1 -->
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <!-- Correct path and extension based on structure -->
+                        <img src="images/products/pink kurta main.png" alt="Pink Kurta Set">
+                        <h3>Pink Kurta Set</h3>
+                        <p class="price">Rs. 1500</p>
+                    </a>
+                     <span class="sizes">XL, XXL</span>
+                </div>
+                 <!-- Product Card Example 2 -->
+                 <div class="product-card">
+                    <a href="#"> <!-- Link to specific detail page -->
+                        <!-- IMPORTANT: Add dark-blue-floral.jpg (or other product) to images/products/ -->
+                        <img src="images/products/blue floral kurta.png" alt="Blue Floral Kurta">
+                        <h3>Blue Floral Kurta</h3>
+                        <p class="price">Rs. 1800</p>
+                    </a>
+                     <span class="sizes">XL, XXL</span>
+                </div>
+                 <!-- Product Card Example 3 -->
+                 <div class="product-card">
+                     <a href="#"> <!-- Link to specific detail page -->
+                        <!-- IMPORTANT: Add beige-paisley.jpg (or other product) to images/products/ -->
+                        <img src="images/products/beige cream kurta.png" alt="Beige Paisley Kurta">
+                        <h3>Beige Paisley Kurta</h3>
+                        <p class="price">Rs. 2000</p>
+                    </a>
+                     <span class="sizes">L, XL, XXL</span>
+                </div>
+                <!-- Add more product cards here -->
+            </section>
+        </div>
+
+        <!-- Pagination -->
+         <nav class="pagination">
+            <a href="#">< Prev</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next ></a>
+        </nav>
+
+    </main>
+
+    <!-- Footer (Copy from index.html or ensure paths are correct) -->
+     <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="product-list.html">Rent Mens Wear</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                 <a href="#"><img src="images/icons/facebook.png" alt="Facebook" style="height:20px; display:inline-block; margin: 0 5px;"></a> <!-- Add icon -->
+                 <a href="#"><img src="images/icons/instagram.png" alt="Instagram" style="height:20px; display:inline-block; margin: 0 5px;"></a> <!-- Add icon -->
+                <p>Stay connected!</p>
+            </div>
+             <div class="footer-section">
+                <h4>Payments</h4>
+                 <img src="images/icons/visa.png" alt="Visa" class="payment-icon"> <!-- Add icon -->
+                 <img src="images/icons/mastercard.png" alt="Mastercard" class="payment-icon"> <!-- Add icon -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Rent a Rent. Simple Version.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Link to the combined JS file for the simplified version -->
+    <script src="js/script.js"></script>
+</body>
+</html>
